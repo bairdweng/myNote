@@ -7,12 +7,14 @@ flie=$(ls directory)
 #进入文件夹
 eval 'cd directory'
 index=0;
+echo '请输入批量更改的名称？'
+read newfileName
 for i in $flie
 do
 #自增index
 index=`expr $index + 1`
 #新文件命名
-newfile="江爷2爷"$index".txt"
+newfile=$newfileName$index".txt"
 eval 'mv $i $newfile'
 echo '更改'$i'-------------->'$newfile
 done
