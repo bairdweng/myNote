@@ -14,7 +14,7 @@ do
 #自增index
 index=`expr $index + 1`
 #新文件命名
-newfile=$newfileName$index".txt"
+newfile=$newfileName$index".png"
 eval 'mv $i $newfile'
 echo '更改'$i'-------------->'$newfile
 done
